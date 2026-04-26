@@ -1,98 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>DISTANTS — Welcome Home</title>
+  <meta charset="UTF-8">
+  <title>DISTANTS — Welcome Home</title>
 
-<style>
-body {
-  margin: 0;
-  font-family: Georgia, serif;
-  background: #eef6f2; /* brighter, gentle green */
-  color: #2f3e3a;
-  text-align: center;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: linear-gradient(#eef6f2, #dceee6);
+      color: #2f3e3a;
+      text-align: center;
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 40px 20px;
-}
+      /* Soft arrival */
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
+    }
 
-h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
 
-.dashboard {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  margin-top: 40px;
-}
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
 
-.panel {
-  flex: 1;
-  padding: 20px;
-  border-radius: 10px;
-  background: #dfeee7;
-}
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
 
-.utilities {
-  margin-top: 40px;
-  display: flex;
-  justify-content: space-around;
-  font-size: 0.9em;
-}
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
 
-.status {
-  margin-top: 40px;
-  font-size: 0.9em;
-  color: #6b7d78;
-}
-</style>
+    .dashboard {
+      display: flex;
+      gap: 15px;
+      margin-top: 40px;
+    }
+
+    .panel {
+      flex: 1;
+      padding: 20px;
+      border-radius: 10px;
+      background: #2e4a42;
+      color: #e8f2ef;
+
+      /* Smooth motion */
+      transition: all 0.4s ease;
+    }
+
+    .panel:hover {
+      background: #3b6157;
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .utilities {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-around;
+      font-size: 0.9em;
+      opacity: 0.85;
+    }
+
+    .status {
+      margin-top: 20px;
+      font-size: 0.85em;
+      color: #5a6f68;
+    }
+
+    .soft {
+      margin-top: 30px;
+      font-style: italic;
+      color: #6b7d78;
+    }
+  </style>
 </head>
 
 <body>
+  <div class="container">
+    <h1>Welcome Home</h1>
 
-<div class="container">
+    <p>
+      You’ve arrived at DISTANTS — a quiet place, created with care,
+      where support is offered gently, and understanding comes first.
+    </p>
 
-  <h1>Welcome Home</h1>
+    <p>
+      There is nothing required of you here. No pressure. No expectations.
+      Only a space to begin… wherever you are.
+    </p>
 
-  <p>
-    You’ve arrived at DISTANTS — a quiet place, created with care,
-    where support is offered gently, and understanding comes first.
-  </p>
+    <div class="dashboard">
+      <div class="panel">
+        <strong>INPUT</strong><br>
+        What would you like help with?
+      </div>
 
-  <div class="dashboard">
-    <div class="panel">
-      <strong>INPUT</strong><br>
-      What would you like help with?
+      <div class="panel">
+        <strong>COMPANION</strong><br>
+        Listening… understanding… responding…
+      </div>
+
+      <div class="panel">
+        <strong>RESULT</strong><br>
+        Clarity will appear here.
+      </div>
     </div>
 
-    <div class="panel">
-      <strong>COMPANION</strong><br>
-      Listening… understanding… responding.
+    <div class="utilities">
+      <div>📝 Notes</div>
+      <div>⏰ Reminders</div>
+      <div>📁 Records</div>
+      <div>🧭 Guidance</div>
     </div>
 
-    <div class="panel">
-      <strong>RESULT</strong><br>
-      Clarity will appear here.
+    <div class="status">
+      System Status: Online • Secure • In Development
+    </div>
+
+    <div class="soft">
+      More will appear here soon.
     </div>
   </div>
-
-  <div class="utilities">
-    <div>📝 Notes</div>
-    <div>⏰ Reminders</div>
-    <div>📁 Records</div>
-    <div>🧭 Guidance</div>
-  </div>
-
-  <div class="status">
-    System Status: Online • Secure • In Development
-  </div>
-
-</div>
-
 </body>
 </html>
