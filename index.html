@@ -1,137 +1,307 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>DISTANTS — Welcome Home</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Georgia, serif;
-      background: linear-gradient(#eef6f2, #dceee6);
-      color: #2f3e3a;
-      text-align: center;
+<meta charset="UTF-8">
 
-      /* Soft arrival */
-      opacity: 0;
-      animation: fadeIn 2s ease forwards;
-    }
+<title>DISTANTS — Under Construction</title>
 
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
-    }
+<style>
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
+body{
 
-    h1 {
-      font-size: 2.8em;
-      margin-bottom: 20px;
-    }
+  margin:0;
 
-    p {
-      font-size: 1.3em;
-      line-height: 1.6;
-    }
+  font-family:Georgia,serif;
 
-    .dashboard {
-      display: flex;
-      gap: 15px;
-      margin-top: 40px;
-    }
+  background:linear-gradient(#4b3428,#2f211a);
 
-    .panel {
-      flex: 1;
-      padding: 20px;
-      border-radius: 10px;
-      background: #2e4a42;
-      color: #e8f2ef;
-      text-decoration: none;
-      display: block;
+  color:#f3eadf;
 
-      transition: all 0.4s ease;
-    }
+  text-align:center;
 
-    .panel:hover {
-      background: #3b6157;
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-    }
+  opacity:0;
 
-    .utilities {
-      margin-top: 30px;
-      display: flex;
-      justify-content: space-around;
-      font-size: 0.9em;
-      opacity: 0.85;
-    }
+  animation:fadeIn 2s ease forwards;
 
-    .status {
-      margin-top: 20px;
-      font-size: 0.85em;
-      color: #5a6f68;
-    }
+}
 
-    .soft {
-      margin-top: 30px;
-      font-style: italic;
-      color: #6b7d78;
-    }
-  </style>
+@keyframes fadeIn{to{opacity:1}}
+
+.container{
+
+  max-width:1000px;
+
+  margin:auto;
+
+  padding:40px 22px;
+
+}
+
+h1{font-size:3em;margin-bottom:10px}
+
+p{font-size:1.35em;line-height:1.55}
+
+.status-light{
+
+  width:18px;height:18px;
+
+  margin:20px auto;
+
+  border-radius:50%;
+
+  background:#9be28f;
+
+  box-shadow:0 0 18px #9be28f;
+
+  animation:breathe 2.5s ease-in-out infinite;
+
+}
+
+@keyframes breathe{
+
+  0%,100%{transform:scale(1);opacity:.65}
+
+  50%{transform:scale(1.45);opacity:1}
+
+}
+
+.dashboard{
+
+  display:flex;
+
+  gap:18px;
+
+  margin-top:40px;
+
+  flex-wrap:wrap;
+
+}
+
+.panel{
+
+  flex:1;
+
+  min-width:240px;
+
+  padding:24px;
+
+  border-radius:14px;
+
+  background:#6a4632;
+
+  color:#fff3e4;
+
+  border:2px solid #b98b64;
+
+  cursor:pointer;
+
+  transition:.35s ease;
+
+  font-size:1.15em;
+
+}
+
+.panel:hover,.panel:focus{
+
+  background:#7d563d;
+
+  transform:translateY(-5px);
+
+  box-shadow:0 10px 24px rgba(0,0,0,.35);
+
+}
+
+button.open{
+
+  margin-top:18px;
+
+  padding:12px 26px;
+
+  font-family:Georgia,serif;
+
+  font-size:1em;
+
+  border-radius:10px;
+
+  border:1px solid #f3d3ad;
+
+  background:#2f211a;
+
+  color:#f3eadf;
+
+  cursor:pointer;
+
+}
+
+.utilities{
+
+  margin-top:32px;
+
+  display:flex;
+
+  justify-content:space-around;
+
+  flex-wrap:wrap;
+
+  gap:14px;
+
+  font-size:1.05em;
+
+}
+
+.utility{
+
+  cursor:pointer;
+
+  padding:10px 14px;
+
+  border-radius:10px;
+
+}
+
+.utility:hover{background:rgba(255,255,255,.12)}
+
+.message{
+
+  margin-top:30px;
+
+  padding:20px;
+
+  border-radius:14px;
+
+  background:rgba(255,255,255,.10);
+
+  border:1px solid rgba(255,255,255,.25);
+
+  font-size:1.25em;
+
+  min-height:35px;
+
+}
+
+.soft{
+
+  margin-top:28px;
+
+  font-style:italic;
+
+  color:#e6cdb4;
+
+}
+
+</style>
+
 </head>
 
 <body>
-  <div class="container">
-    <h1>Welcome Home</h1>
 
-    <p>
-      You’ve arrived at DISTANTS — a quiet place, created with care,
-      where support is offered gently, and understanding comes first.
-    </p>
+<div class="container">
 
-    <p>
-      There is nothing required of you here. No pressure. No expectations.
-      Only a space to begin… wherever you are.
-    </p>
+  <h1>DISTANTS</h1>
 
-    <div class="dashboard">
+  <div class="status-light"></div>
 
-      <a href="input.html" class="panel">
-        <strong>INPUT</strong><br>
-        What would you like help with?
-      </a>
+  <p>
 
-      <div class="panel">
-        <strong>COMPANION</strong><br>
-        Listening… understanding… responding…
-      </div>
+    Welcome Home. This site is alive, secure, and still under construction.
 
-      <div class="panel">
-        <strong>RESULT</strong><br>
-        Clarity will appear here.
-      </div>
+  </p>
+
+  <p>
+
+    The first rooms are being prepared with care. Doors may be opened,
+
+    tabs may be tested, and every invitation should answer.
+
+  </p>
+
+  <div class="dashboard">
+
+    <div class="panel" onclick="respond('INPUT room acknowledged. This doorway will later gather the visitor’s first request.')">
+
+      <strong>INPUT</strong><br>
+
+      What would you like help with?<br>
+
+      <button class="open">OPEN</button>
 
     </div>
 
-    <div class="utilities">
-      <div>📝 Notes</div>
-      <div>⏰ Reminders</div>
-      <div>📁 Records</div>
-      <div>🧭 Guidance</div>
+    <div class="panel" onclick="respond('COMPANION room acknowledged. This space will later listen, orient, and respond gently.')">
+
+      <strong>COMPANION</strong><br>
+
+      Listening… understanding… responding…<br>
+
+      <button class="open">OPEN</button>
+
     </div>
 
-    <div class="status">
-      System Status: Online • Secure • In Development
+    <div class="panel" onclick="respond('RESULT room acknowledged. This area will later return clarity, next steps, and useful guidance.')">
+
+      <strong>RESULT</strong><br>
+
+      Clarity will appear here.<br>
+
+      <button class="open">OPEN</button>
+
     </div>
 
-    <div class="soft">
-      More will appear here soon.
-    </div>
   </div>
+
+  <div class="utilities">
+
+    <div class="utility" onclick="respond('Notes tab acknowledged.')">📝 Notes</div>
+
+    <div class="utility" onclick="respond('Reminders tab acknowledged.')">⏰ Reminders</div>
+
+    <div class="utility" onclick="respond('Records tab acknowledged.')">📁 Records</div>
+
+    <div class="utility" onclick="respond('Guidance tab acknowledged.')">🧭 Guidance</div>
+
+  </div>
+
+  <div id="message" class="message">
+
+    System Status: Online • Breathing • In Development
+
+  </div>
+
+  <div class="soft">
+
+    More rooms will appear here soon.
+
+  </div>
+
+</div>
+
+<script>
+
+function respond(text){
+
+  const box=document.getElementById("message");
+
+  box.textContent=text;
+
+  box.style.animation="none";
+
+  void box.offsetWidth;
+
+  box.style.animation="pulse .45s ease";
+
+}
+
+const style=document.createElement("style");
+
+style.textContent="@keyframes pulse{50%{transform:scale(1.03)}}";
+
+document.head.appendChild(style);
+
+</script>
+
 </body>
+
 </html>
