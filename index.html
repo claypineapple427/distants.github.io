@@ -1,307 +1,68 @@
-<!DOCTYPE html>
+🏛️
+DISTANTS HEADQUARTERS
+Home
+Rooms
+Status
+Library
+Continuity
+BROWN HEADQUARTERS · MASTER REFERENCE IMPLEMENTATION
+Welcome Home
+A calm public entrance for DISTANTS: guidance, continuity, protection, memory, and practical support gathered under one roof.
+Preserve. Protect. Prepare. Progress.
+Enter the Rooms
+Check Status
+Need Guidance?
+
+FOUNDER STATUS
+Present
+REPOSITORY
+Canonical
+MIRROR
+Prepared
+NOTIFICATIONS
+Quiet
+LAST BACKUP
+Today
+Rooms of the House
+Every visible door works. Each room opens into a prepared space with its own shelves, orientation, and return path.
+📚
+Library
+Reference shelves, manuals, doctrine, sanctioned notes, and preserved knowledge.
+OPEN
+🧭
+Mentor
+Gentle guidance, plain-language explanation, and calm first steps.
+OPEN
+🛡️
+Senior Shield
+Benefit reminders, exemption awareness, expense-drift reviews, and stability checks.
+OPEN
+🎩
+Señor Guyde’s
+Kind reminders, visible companions, and daily support for independent living.
+OPEN
+🔗
+LEVERAGE
+Curated support links, wellbeing resources, and useful outside tools organized by need.
+OPEN
+⚓
+Continuity
+Watchdog routines, recovery paths, backups, mirrors, and preservation discipline.
+OPEN
+Central Desk
+DISTANTS begins with one front door. Visitors should arrive, breathe, and understand where to go next.
+	•	One headquarters rather than scattered applications.
+	•	Rooms that inherit the same temperament.
+	•	Clear recovery paths and visible navigation.
+Desk Note
+Open Library
+Continuity Promise
+The public entrance remains stable while tools may change behind it. The institution persists; implementation can evolve.
+Repository
+Mirror
+Notifications
+DISTANTS · Brown Headquarters · Canonical public entrance · Built for calm access, preserved memory, and future continuity.
+← Back
+Home
+Next →
 
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-
-<title>DISTANTS — Under Construction</title>
-
-<style>
-
-body{
-
-  margin:0;
-
-  font-family:Georgia,serif;
-
-  background:linear-gradient(#4b3428,#2f211a);
-
-  color:#f3eadf;
-
-  text-align:center;
-
-  opacity:0;
-
-  animation:fadeIn 2s ease forwards;
-
-}
-
-@keyframes fadeIn{to{opacity:1}}
-
-.container{
-
-  max-width:1000px;
-
-  margin:auto;
-
-  padding:40px 22px;
-
-}
-
-h1{font-size:3em;margin-bottom:10px}
-
-p{font-size:1.35em;line-height:1.55}
-
-.status-light{
-
-  width:18px;height:18px;
-
-  margin:20px auto;
-
-  border-radius:50%;
-
-  background:#9be28f;
-
-  box-shadow:0 0 18px #9be28f;
-
-  animation:breathe 2.5s ease-in-out infinite;
-
-}
-
-@keyframes breathe{
-
-  0%,100%{transform:scale(1);opacity:.65}
-
-  50%{transform:scale(1.45);opacity:1}
-
-}
-
-.dashboard{
-
-  display:flex;
-
-  gap:18px;
-
-  margin-top:40px;
-
-  flex-wrap:wrap;
-
-}
-
-.panel{
-
-  flex:1;
-
-  min-width:240px;
-
-  padding:24px;
-
-  border-radius:14px;
-
-  background:#6a4632;
-
-  color:#fff3e4;
-
-  border:2px solid #b98b64;
-
-  cursor:pointer;
-
-  transition:.35s ease;
-
-  font-size:1.15em;
-
-}
-
-.panel:hover,.panel:focus{
-
-  background:#7d563d;
-
-  transform:translateY(-5px);
-
-  box-shadow:0 10px 24px rgba(0,0,0,.35);
-
-}
-
-button.open{
-
-  margin-top:18px;
-
-  padding:12px 26px;
-
-  font-family:Georgia,serif;
-
-  font-size:1em;
-
-  border-radius:10px;
-
-  border:1px solid #f3d3ad;
-
-  background:#2f211a;
-
-  color:#f3eadf;
-
-  cursor:pointer;
-
-}
-
-.utilities{
-
-  margin-top:32px;
-
-  display:flex;
-
-  justify-content:space-around;
-
-  flex-wrap:wrap;
-
-  gap:14px;
-
-  font-size:1.05em;
-
-}
-
-.utility{
-
-  cursor:pointer;
-
-  padding:10px 14px;
-
-  border-radius:10px;
-
-}
-
-.utility:hover{background:rgba(255,255,255,.12)}
-
-.message{
-
-  margin-top:30px;
-
-  padding:20px;
-
-  border-radius:14px;
-
-  background:rgba(255,255,255,.10);
-
-  border:1px solid rgba(255,255,255,.25);
-
-  font-size:1.25em;
-
-  min-height:35px;
-
-}
-
-.soft{
-
-  margin-top:28px;
-
-  font-style:italic;
-
-  color:#e6cdb4;
-
-}
-
-</style>
-
-</head>
-
-<body>
-
-<div class="container">
-
-  <h1>DISTANTS</h1>
-
-  <div class="status-light"></div>
-
-  <p>
-
-    Welcome Home. This site is alive, secure, and still under construction.
-
-  </p>
-
-  <p>
-
-    The first rooms are being prepared with care. Doors may be opened,
-
-    tabs may be tested, and every invitation should answer.
-
-  </p>
-
-  <div class="dashboard">
-
-    <div class="panel" onclick="respond('INPUT room acknowledged. This doorway will later gather the visitor’s first request.')">
-
-      <strong>INPUT</strong><br>
-
-      What would you like help with?<br>
-
-      <button class="open">OPEN</button>
-
-    </div>
-
-    <div class="panel" onclick="respond('COMPANION room acknowledged. This space will later listen, orient, and respond gently.')">
-
-      <strong>COMPANION</strong><br>
-
-      Listening… understanding… responding…<br>
-
-      <button class="open">OPEN</button>
-
-    </div>
-
-    <div class="panel" onclick="respond('RESULT room acknowledged. This area will later return clarity, next steps, and useful guidance.')">
-
-      <strong>RESULT</strong><br>
-
-      Clarity will appear here.<br>
-
-      <button class="open">OPEN</button>
-
-    </div>
-
-  </div>
-
-  <div class="utilities">
-
-    <div class="utility" onclick="respond('Notes tab acknowledged.')">📝 Notes</div>
-
-    <div class="utility" onclick="respond('Reminders tab acknowledged.')">⏰ Reminders</div>
-
-    <div class="utility" onclick="respond('Records tab acknowledged.')">📁 Records</div>
-
-    <div class="utility" onclick="respond('Guidance tab acknowledged.')">🧭 Guidance</div>
-
-  </div>
-
-  <div id="message" class="message">
-
-    System Status: Online • Breathing • In Development
-
-  </div>
-
-  <div class="soft">
-
-    More rooms will appear here soon.
-
-  </div>
-
-</div>
-
-<script>
-
-function respond(text){
-
-  const box=document.getElementById("message");
-
-  box.textContent=text;
-
-  box.style.animation="none";
-
-  void box.offsetWidth;
-
-  box.style.animation="pulse .45s ease";
-
-}
-
-const style=document.createElement("style");
-
-style.textContent="@keyframes pulse{50%{transform:scale(1.03)}}";
-
-document.head.appendChild(style);
-
-</script>
-
-</body>
-
-</html>
